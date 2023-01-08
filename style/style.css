@@ -1,0 +1,104 @@
+/* GENERAL STYLING */
+:root {
+	--color1 : aquamarine;
+	--color2 : #f0f;
+	--grid-color: #00bfff;
+	--font-color: white;
+	--background-color: #483D8B;
+	--second-bg-color: #272046;
+}
+
+body {
+	background-color: var(--background-color);
+	/* font	 */
+	font-family: 'Raleway', sans-serif;
+	color: var(--font-color);
+		/* set children behavior */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* TEXT ZONE */
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+#explain{
+	width : 80%;
+	margin-bottom: 2rem;
+		/* gérer le positionnement des enfants */
+	display: flex;
+	gap: 2.5rem;
+}
+
+article {
+	/* spacing	 */
+	padding:  0.5rem 1rem;
+	/* background and border */
+	background-color: var(--second-bg-color);
+	border: solid 0.1rem var(--grid-color);
+	border-radius: 0.6rem;
+	/* font */
+	font-size: 1.2rem;
+}
+
+/* PLAYING ZONE */
+
+.container {
+	width: 80%;
+	border: solid 0.4rem var(--grid-color);
+	border-radius: 0.6rem;
+	background-color: var(--second-bg-color);
+	/* set children behavior  */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	/* spacing	 */
+		margin: 2rem;
+		padding: 0.8rem;
+	/* 	background and border */
+		background-color: var(--second-bg-color);
+		border: none;
+		border-radius: 0.8rem;
+	/* 	font */
+		font-family: 'Raleway', sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		color: var(--font-color);
+	}
+
+/* DOM ELEMENTS STYLING */
+
+/*cells */
+.target	{
+	width: calc(100%/11);
+	aspect-ratio: 1/1;
+	padding: 0.3rem;
+	border-right: solid 1px var(--grid-color);
+}
+
+/* except last one */
+.target:last-child {
+	border: none;
+}
+/* tokens */
+.circle {
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+}
+
+.color1 {
+	background-color: var(--color1);
+}
+
+.color2 {
+	background-color: var(--color2);
+}
+

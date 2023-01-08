@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" >
+	<head>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./style/style.css">
+		<title>Switch tokens</title>
+
+	</head>
+	<body>
+		<h1>Intervertir les pions !</h1>
+		<section id="explain">
+			<article>
+				<h2>But :</h2>
+				<p>Inverser les pions de couleurs : les pions de la couleur 01 doivent remplacer ceux de la couleur 02</p>
+			</article>
+			<article>
+				<h2>Règles :</h2>
+				<ul>
+				<li>Un pion ne peut aller que dans un sens (avancer mais pas reculer)</li>
+					<li>Un pion peut se déplacer sur une case vide ou sauter au-dessus d'une autre <strong>si la case suivante est vide</strong> (donc il ne peut pas passer au-dessus de plus d'1 pion à la fois)</li>
+				</ul>
+				<p><em>Précision: les pions de la couleur 01 vont vers la droite, ceux de la couleur 02 vont vers la gauche</em></p>
+			</article>
+		</section>
+		<!-- Playing zone -->
+		<div class="container">
+		</div>
+		<!-- Reset -->
+		<button id='reset'>Recommencer</button>
+
+		<!-- Footer -->
+		<footer>
+			<p><em>Ce jeu est conçu pour fonctionner sur PC en raison de l'utilisation de la fonctionnalité de glisser-déposer</em></p>
+		</footer>
+		<!-- Scripts -->
+
+		<script  src="./src/script.js"></script>
+
+	</body>
+</html>
