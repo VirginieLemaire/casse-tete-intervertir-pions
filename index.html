@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./style/style.css">
-		<title>Switch tokens</title>
+		<title>Intervertir les pions</title>
 
 	</head>
 	<body>
@@ -31,13 +31,40 @@
 		<!-- Reset -->
 		<button id='reset'>Recommencer</button>
 
+		<!-- change colors -->
+		<section id="color-change">
+			<img src="./images/icons8-color-palette-100.png" title="changer les couleurs" alt="icône palette de couleurs" id="palette">
+			<div class="dropdown-color-palette">
+				<div class="color-zone">
+					<label for="color02Picker">pions gauche</label>
+					<input type="color" name="color01" id="color01Picker">
+				</div>
+				<div class="color-zone">
+					<label for="color01Picker">pions droite</label>
+					<input type="color" name="color02" id="color02Picker">
+				</div>
+				<div class="color-zone">
+					<label for="gameBackgroundPicker">fond du jeu</label>
+					<input type="color" name="game-background" id="gameBackgroundPicker">
+				</div>
+				<div class="color-zone">
+					<label for="pageBackgroundPicker">fond page</label>
+					<input type="color" name="page-background" id="pageBackgroundPicker">
+				</div>
+				<div class="color-zone">
+					<label for="textColorPicker">texte</label>
+					<input type="color" name="text-color" id="textColorPicker">
+				</div>
+			</div>
+		</section>
+
 		<!-- Footer -->
 		<footer>
 			<p><em>Ce jeu est conçu pour fonctionner sur PC en raison de l'utilisation de la fonctionnalité de glisser-déposer</em></p>
 		</footer>
 		<!-- Scripts -->
-
 		<script  src="./src/script.js"></script>
+		<script src="./src/custom.js"></script>
 
 	</body>
 </html>

@@ -9,6 +9,8 @@
 }
 
 body {
+	/* spacing	 */
+	padding: 0 10rem;
 	background-color: var(--background-color);
 	/* font	 */
 	font-family: 'Raleway', sans-serif;
@@ -23,11 +25,11 @@ body {
 
 h1 {
 	font-size: 2.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 }
 
 #explain{
-	width : 80%;
+	width : 100%;
 	margin-bottom: 2rem;
 		/* gérer le positionnement des enfants */
 	display: flex;
@@ -48,7 +50,7 @@ article {
 /* PLAYING ZONE */
 
 .container {
-	width: 80%;
+	width: 100%;
 	border: solid 0.4rem var(--grid-color);
 	border-radius: 0.6rem;
 	background-color: var(--second-bg-color);
@@ -102,3 +104,55 @@ button {
 	background-color: var(--color2);
 }
 
+/* CUSTOMIZE THE GAME */
+#color-change {
+	/* align to right */
+	align-self: flex-end;
+	/* set children behavior  */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#color-change:hover .dropdown-color-palette {
+	visibility: visible;
+	opacity: 1;
+}
+
+.dropdown-color-palette {
+	visibility: none;
+	position: absolute;
+	min-width: 40%;
+	padding:10px 5px;
+	border-radius: 5px;
+	background-color: var(--second-bg-color);
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0.5s;
+	/* set children behavior  */
+	display: flex;
+}
+
+.color-zone {
+	width: calc(100%/3);
+	height: 100%;
+	border-radius: 50%;
+	margin: 5px;
+	/* set children behavior  */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+input[type="color"] {
+	width: 50px;
+    height: 50px;
+    background-color: white;
+    padding: 0.2rem;
+    cursor: pointer;
+	border-radius: 10%;
+}
+label {
+	font-size: 0.9rem;
+	color: var(--font-color);
+	padding-bottom: 0.5rem;
+}
